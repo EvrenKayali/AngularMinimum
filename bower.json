@@ -1,0 +1,26 @@
+{
+  "name": "erase",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Nasut Evren KAYALI"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "components-font-awesome": "^4.6.3",    
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-animate": "^1.5.8"
+  }
+}

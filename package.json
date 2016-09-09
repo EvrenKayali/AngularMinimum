@@ -1,0 +1,19 @@
+{
+  "name": "erase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server -port 9010",
+    "start": "npm run lite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "lite-server": "^2.2.2"
+  }
+}
