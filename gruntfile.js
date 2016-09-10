@@ -5,7 +5,8 @@ module.exports = function (grunt) {
             debug: [
                 'src/content/*',
                 'src/libs/*',
-                '!src/libs/_references.js'
+                '!src/libs/_references.js',
+                '!src/content/style.css'
             ]
         },
         copy: {
