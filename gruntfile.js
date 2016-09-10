@@ -28,13 +28,28 @@ module.exports = function (grunt) {
                     { expand: true, cwd: 'libs/bootstrap/dist/css', src: '*.min.css', dest: 'release/content' }
                 ]
             }
-        }
+        },
+        concat: {
+            options: {
+                separator: ';',
+            },
+            debug: {
+                src: [
+                    'src/libs/jquery.min.js',
+                    'src/libs/bootstrap.min.js',
+                    'src/libs/angular.min.js',
+                    'src/libs/angular-ui-router.min.js'
+                ],
+                dest: 'src/libs/built.js'
+            }
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-concat');
 
-    grunt.registerTask('debug', ['clean', 'copy:debug']);
+    grunt.registerTask('debug', ['clean', 'copy:debug','concat:debug']);
     grunt.registerTask('release', ['copy:release']);
 
 }

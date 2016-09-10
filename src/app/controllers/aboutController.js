@@ -1,3 +1,3 @@
-﻿app.controller("aboutController", function ($scope) {
+﻿app.controller("aboutController",['$scope', function ($scope) {
     $scope.header = 'About Page';
-});
+}]);
